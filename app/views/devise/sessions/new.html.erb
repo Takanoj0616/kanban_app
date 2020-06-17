@@ -1,6 +1,6 @@
 <div class='signinPage'>
   <div class='container'>
-    <h2 class="title">kanbanにサインイン</h2>
+    <h1 class="title">kanbanにサインイン</h1>
     <div class="text-center m-3">or</div>
     <div class="text-center"><%= render "devise/shared/links" %></div>
     <%= form_with scope: resource, as: resource_name, url: session_path(resource_name), html: { class: "mt-5, new_user" }, local: true do |f| %>
@@ -18,5 +18,47 @@
         <%= f.submit "サインイン", class: "loginBtn" %>
       </div>
     <% end %>
+  </div>
+</div>
+
+<div id="about" class="about-us">
+          <div class="container about-sec">
+              <header class="block-heading cleafix">
+          <div class="title-page">
+            <p class="main-header">About</p>
+              <p class="sub-header">自分のやるべきことが管理できる。</p>
+          </div>
+        </header>
+              <div class="divide50"></div>
+              <div class="row">
+                  <div class="col-md-4 text-center">
+                      <div class="aboutus-item">
+                          <i class="aboutus-icon fa fa-search"></i>
+                          <h4 class="aboutus-title">タスクで管理できる。</h4>
+                          <p class="aboutus-desc">kabanでは、タスクを作りやるべきことを明確化して効率をあげるサイトを目指しています。</p>
+                      </div>
+                  </div>
+                  <div class="col-md-4 text-center">
+                      <div class="aboutus-item">
+                          <i class="aboutus-icon fa fa-thumbs-o-up"></i>
+                          <h4 class="aboutus-title">終わったものは削除できる。</h4>
+                          <p class="aboutus-desc">終わったタスクに関しては、削除できる機能がある。</p>
+                      </div>
+                  </div>
+                  <div class="col-md-4 text-center">
+                      <div class="aboutus-item">
+                          <i class="aboutus-icon fa fa-camera-retro"></i>
+                          <h4 class="aboutus-title">編集ができる</h4>
+                          <p class="aboutus-desc">編集できることで、自分のやるべきことが変わっても対応できる。</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+<div class="content-block parallax" id="parallax">
+  <div class="container">
+    <h3 class="call-action pull-left">さあ、新規登録してみよう！</h3>
   </div>
 </div>
