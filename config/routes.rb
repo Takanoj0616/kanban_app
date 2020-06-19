@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   resources :list, only: %i(new create edit update destroy) do
      resources :card, except: %i(index)
   end
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'inquiries/new'
+  get 'inquiries/confirm'
+  get 'inquiries/thanks'
+  
 end
