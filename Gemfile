@@ -66,3 +66,7 @@ gem "font-awesome-sass", "< 5.0.13"
 gem 'devise'
 gem 'font-awesome-rails'
 gem 'dotenv-rails'
+gem 'dotenv-rails'
+group :production do
+  gem 'mysql2'
+end
