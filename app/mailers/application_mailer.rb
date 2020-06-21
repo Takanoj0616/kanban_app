@@ -1,4 +1,7 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
-  layout 'mailer'
+  def received_email(user)
+    @user = user
+    mail to: @user.email,
+         subject: "【#{@user.name}様からお知らせがあります】"
+  end
 end
