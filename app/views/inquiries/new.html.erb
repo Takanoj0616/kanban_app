@@ -23,6 +23,10 @@
         <%= f.text_field :email, autofocus: true, class: "form-control", placeholder: "メールアドレス" %>
       </div>
       <div class="form-group">
+       <%= f.label :relationship %>
+        <%= f.select(:relationship, [["始めて送る", "始めて送る"], ["2回目以降", "2回目以降"]], {}, class: "form-control") %>
+     </div>
+      <div class="form-group">
         <%= f.label :content %>
         <%= f.text_area :content, class: "form-control", placeholder: "伝えたいことがあれば入力してください" %>
       </div>

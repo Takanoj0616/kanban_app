@@ -1,8 +1,10 @@
 ja:
   activerecord:
     attributes:
-      user:
+      inquiry:
         name: "お名前"
         password: "パスワード"
         password_confirmation: "パスワード確認"
         email: "メールアドレス"
+        relationship: "送る人"
+        content: "何か伝えたいこと"
