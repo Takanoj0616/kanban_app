@@ -5,9 +5,9 @@ class InquiryMailer < ApplicationMailer
   #
   #   en.inquiry_mailer.received_email.subject
   #
-  def received_email
-    @greeting = "Hi"
-
-    mail to: "to@example.org"
+  def received_email(user)
+    @user = user
+    mail to: @user.email,
+         subject: "【#{@user.name}様からご連絡がございます。】"
   end
 end

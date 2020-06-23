@@ -4,7 +4,7 @@ class InquiriesController < ApplicationController
   end
 
   def confirm
-    @inquiry = Inquiry.new(inquiry_params)
+      @inquiry = Inquiry.new(inquiry_params)
    if @inquiry.save
      render "confirm"
    else
@@ -13,8 +13,8 @@ class InquiriesController < ApplicationController
   end
 
   def thanks
-    @inquiry = Inquiry.new(inquiry_params)
-    InquiryMailer.received_email(@inquiry).deliver_now
+      @inquiry = Inquiry.new(inquiry_params)
+      InquiryMailer.received_email(@inquiry).deliver_now
   end
 
   private
