@@ -1,25 +1,21 @@
-# 自分のやるべき事を明確にしよう!!
+# kanban_app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+サイト概要
+自分のやるべき事を明確にするタスク作りに特化したサイト。
+・やるべき事を明確にすることで、一日のスケジュールをより明確にすることができる。
+・追加でやるべきことが増えても、付箋のように追加で付け足すことができる。
 
-Things you may want to cover:
+サイトテーマ
+・自分のやるべき事を明確にして一日を効率良く動ける為には、学校の時間割のように、明確にする必要があると考え時間割を作る補助として、自分のやるべき事を直に分かるサイト。
 
-* Ruby version
+テーマを選んだ理由
+・頼まれたこと、やるべき事を忘れることが多く常にメモなどをしています。メモではなく自分でアプリケーションを作成すれば、愛着も湧きタスク作りを能動的にでき、効率的に動けると思い作成した。
 
-* System dependencies
 
-* Configuration
+ターゲットユーザ
+・学生や社会人の方。
 
-* Database creation
+主な利用シーン
+・やるべき事が出来たらサイトに書き込み、効率的に動くことができる。
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # kanban_app
